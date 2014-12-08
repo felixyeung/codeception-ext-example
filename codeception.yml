@@ -17,8 +17,8 @@ modules:
             dump: tests/_data/dump.sql
 extensions:
     enabled:
-    - Codeception\Extension\MyEventHandler
-    params:
-        Codeception\Extension\MyEventHandler
+        - Codeception\Extension\MyEventHandler
+    config:
+        Codeception\Extension\MyEventHandler:
             foo: 'My first param'
             bar: 'My second param'
